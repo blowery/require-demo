@@ -1,6 +1,6 @@
 require.def(
     "packages/base",
-    [ "js/packages/one.js", "js/packages/two.js"], 
+    [ "/~blowery/js/packages/one.js", "/~blowery/js/packages/two.js"], 
     function(){
         console.log("base loaded");
     }
