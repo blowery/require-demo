@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playing with RequireJS</title>
+    <script type="text/javascript">
+      var require = { baseUrl: "js/" };
+    </script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript" src="js/packages/base.js"></script>
+    <script type="text/javascript">
+      require.ready(function(){
+        console.log("ready");
+      });
+      
+      require(["js/packages/three.js"], function(){
+        console.log("three is here");
+      });
+    </script> 
+  </head> 
+  <body>
+    Hi there
+  </body>
+</html>  
+    
